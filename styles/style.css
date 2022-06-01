@@ -755,7 +755,7 @@ textarea::placeholder {
 }
 
 .past {
-  padding: 56.5px 0 50px;
+  padding: 56.5px 0 100px;
   background-color: #000000;
 }
 
@@ -948,6 +948,7 @@ textarea::placeholder {
 }
 
 .footer {
+  padding: 100px 0;
   background-color: #000;
 }
 
