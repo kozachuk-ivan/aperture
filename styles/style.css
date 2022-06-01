@@ -1220,4 +1220,28 @@ textarea::placeholder {
     width: 100%;
   }
 }
+
+@media (max-width: 514px) {
+  .footer__col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .footer__col:after {
+    content: '';
+    position: absolute;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='1168' height='2' viewBox='0 0 1168 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H1168V2H0V0Z' fill='white'/%3E%3C/svg%3E");
+    left: 0;
+    bottom: -18%;
+    padding-top: 0.5%;
+    width: 100%;
+  }
+  .footer__col:nth-child(2) {
+    margin-bottom: 94px;
+  }
+  .footer__col:nth-child(2):after {
+    bottom: -51%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
