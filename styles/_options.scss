@@ -1,0 +1,45 @@
+.options {
+
+    &__row {
+        display: flex;
+        margin-left: auto;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 54;
+
+        *:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+    }
+
+    &__col {
+        margin-right: 16px;
+    }
+
+    &__img {
+        line-height: 0;
+        margin-right: 6px;
+        width: 16px;
+        height: 16px;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &-three {
+            width: 32px;
+            height: 16px;
+        }
+
+        &-four {
+            width: 10px;
+            height: 16px;
+        }
+    }
+}

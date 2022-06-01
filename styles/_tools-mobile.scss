@@ -1,0 +1,83 @@
+@media (max-width: 1065px) {
+    .tools {
+
+        &__desc {
+            max-width: 400px;
+        }
+    }
+}
+
+@media (max-width: 840px) {
+
+    .tools {
+
+        &__col {
+
+            &-two {
+                position: relative;
+            }
+
+            &-three {
+                position: relative;
+                flex: 1 1 100%;
+
+                .container {
+                    display: flex;
+                }
+            }
+        }
+
+        &__card {
+
+            &-two {
+                display: flex;
+                flex: 1 1 100%;
+                width: 100%;
+                align-items: center;
+            }
+
+            &-three {
+                justify-content: flex-end;
+            }
+        }
+
+        &__desc {
+
+            &-two {
+                text-align: center;
+            }
+            
+        }
+    }
+
+    .options {
+
+        &__row {
+            
+            &-two {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .options {
+
+        &__col {
+            margin-right: 6px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+
+    .tools {
+
+        &__card {
+            margin-right: 0;
+        }
+    }
+}

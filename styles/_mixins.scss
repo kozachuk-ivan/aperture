@@ -1,0 +1,37 @@
+@mixin container($mw) {
+    max-width: $mw;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@mixin bgstyles($url) {
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin btnstyles() {
+
+    position: relative;
+        display: inline-flex;
+        border-radius: 14px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            @include bgstyles('../img/what/btn-curcle.svg');
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            width: 32px;
+            height: 32px;
+            top: 5px;
+            left: 4px;
+        }
+
+        &:hover:before {
+            // background: linear-gradient(90deg, rgba(255,255,255,1) 100%, rgba(255,255,255,0.16710434173669464) 100%, rgba(255,255,255,0.16710434173669464) 100%), url(../img/what/btn-curcle.svg);
+            // border-radius: 40%;
+            // filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+            display: none;
+        }
+}

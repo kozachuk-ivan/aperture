@@ -1,0 +1,27 @@
+@media (max-width:740px) {
+    .past {
+
+        &__wrap {
+            flex-direction: column;
+
+            *:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__col {
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+    }
+    
+}
+
+@media (max-width:320px) {
+    .past {
+        
+        &__box {
+            margin-right: 0;
+        }
+    }
+}

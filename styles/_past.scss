@@ -1,0 +1,109 @@
+.past {
+    padding: 56.5px 0 50px;
+    background-color: #000000;
+
+    &__subtitle {
+        margin-bottom: 40px;
+        line-height: 1.25;
+    }
+
+    &__wrapper {
+        margin-bottom: 100px;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        *:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__col {
+        margin-right: 10px;
+
+    }
+
+    &__link {
+        display: block;
+        line-height: 0;
+    }
+
+    &__img {
+        width: 128px;
+        height: 30px;
+        transition: .3s;
+
+        &-two {
+            height: 78px;
+        }
+
+        &-four {
+            height: 36px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__row {
+        @include bgstyles('../img/past/bgi.jpg');
+        min-height: 62vh;
+        display: flex;
+        margin-bottom: 113px;
+
+        .container {
+            @include container(1390px);
+            flex: 1 1 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex: 1 1 100%;
+        align-items: center;
+        margin-right: 79px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        max-width: 240px;
+    }
+}
+
+.need {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 571px;
+    }
+
+    &__subtitle {
+        line-height: 1.25;
+        margin-bottom: 22px;
+    }
+
+    &__btn {
+        @include btnstyles
+    }
+}

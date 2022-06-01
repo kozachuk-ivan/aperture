@@ -1,0 +1,111 @@
+.tools {
+    background-color: #000;
+    padding: 50px 0 56.5px 0;
+
+    .container {
+        @include container (1390px)
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: flex-end;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;        
+    }
+
+    &__col {
+        display: flex;
+        flex: 1 1 100%;      
+        min-height: 62vh;
+
+        &-same {
+            min-height: 55.8vh;
+        }
+
+        &-one {
+            @include bgstyles ('../img/tools/col-1.jpg');
+        }
+
+        &-two {
+            background-color: #000;
+        }
+
+        &-three {
+            position: absolute;
+            top: 34.49%;
+            right: 0;
+            width: 50%;
+            @include bgstyles ('../img/tools/col-2.jpg');
+            flex: 0 0 50%;     
+
+            .container {
+                display: none
+            }
+        }
+
+        &-four {
+            @include bgstyles ('../img/tools/col-3.jpg');
+        }
+    }
+
+    &__card {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        margin-right: 47px;
+
+        &-two {
+            flex: 1 0 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-right: auto;
+        }
+
+        &-three {
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+        line-height: 1.14;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        line-height: 1.43;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        max-width: 504px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+
+        &-same {
+            max-width: 298px;
+            color: #C0C0C0;
+        }
+    }
+
+    &__btn {
+        @include btnstyles
+    }
+}
