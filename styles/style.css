@@ -1221,7 +1221,7 @@ textarea::placeholder {
   }
 }
 
-@media (max-width: 442px) {
+@media (max-width: 490px) {
   .footer__col {
     display: -webkit-box;
     display: -ms-flexbox;
